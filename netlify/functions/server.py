@@ -15,7 +15,7 @@ def handler(event, context):
     # 转换Netlify的event为Flask能识别的请求
     environ = create_environ(
         path=event['path'],
-        base_url="https://你的网站域名（后面会有）",  # 先随便写，后面可以改
+        base_url="https://endearing-belekoy-ee02c7.netlify.app/",  # 先随便写，后面可以改
         query_string=event['queryStringParameters'],
         method=event['httpMethod'],
         headers=event['headers'],

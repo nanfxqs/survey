@@ -1,0 +1,7 @@
+[build]
+  functions = "netlify/functions"  # 指定函数目录
+
+[[redirects]]
+  from = "/*"  # 所有请求
+  to = "/.netlify/functions/server"  # 转发到server函数
+  status = 200  # 用200状态码处理（避免301跳转）
